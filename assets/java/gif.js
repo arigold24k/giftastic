@@ -10,7 +10,7 @@ function add_buttons() {
 
 function get_gifs(movie) {
     console.log(movie);
-    var queryURL = "http://api.giphy.com//v1/gifs/search?q=" + movie + "&api_key=4604176cdfcd4cee9af08803ffeedf63&limit=10";
+    var queryURL = "http://api.giphy.com//v1/gifs/search?q=" + movie + "&api_key=4604176cdfcd4cee9af08803ffeedf63&limit=12";
     console.log(queryURL);
     $.ajax({
         url: queryURL,
@@ -26,23 +26,20 @@ function get_gifs(movie) {
             console.log(rating);
             console.log(still);
             console.log(animate);
+            var divimages = $("<div class='imgblock'></div>");
 
-            $(".gify-area").append("<div class='rating'>Rating: " + rating + "</div>");
+           divimages.append("<div class='rating'>Rating: " + rating + "</div>");
             var gify = $("<img>");
             gify.attr("class", "gifimg")
             gify.attr("data-still", still);
             gify.attr("data-animate", animate);
             gify.attr("data-state", "still");
             gify.attr("src", still);
-
-            $(".gify-area").append(gify);
+            divimages.append(gify);
+            $(".gify-area").append(divimages);
         };
-
     });
-
-
-
-}
+};
 
 
 $(document).ready(add_buttons());
@@ -80,7 +77,7 @@ $(document).on("click", ".gifimg", function () {
         }
 
 
-})
+});
 
 
 
