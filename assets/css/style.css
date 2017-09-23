@@ -28,6 +28,15 @@ label {
     color: lightgoldenrodyellow;
 }
 
+#movie-input {
+    width: 330px;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-left:5px;
+}
+
 img:hover {
     border: 5px solid green;
 }
