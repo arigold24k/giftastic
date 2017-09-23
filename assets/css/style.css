@@ -1,17 +1,27 @@
+body {
 
+    background-image: url(../images/background.png);
+}
 .rating {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
-    font-family: "Comic Sans MS";
+    font: "Comic Sans MS";
     margin: 5px 1px;
+    color: lightgoldenrodyellow;
 }
 
 img {
     width: 300px;
     height: 300px;
     border-radius: 8px;
+}
 
+label {
+    font: "Times New Roman";
+    font-size: 24px;
+    font-weight: 600;
+    color: lightgoldenrodyellow;
 }
 
 img:hover {
@@ -30,8 +40,22 @@ img:hover {
 
 .aributton {
     margin-right: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: none;
+    color: coral;
+    background-color: white;
 }
 
 .button-area {
     margin: 5px 0 0 3px;
+}
+
+#add-movie {
+    border-radius: 4px;
+    background-color: white;
+    color: coral;
+    font-weight: 600;
 }

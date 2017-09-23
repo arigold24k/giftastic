@@ -47,11 +47,14 @@ $(document).ready(add_buttons());
 
 $(document).on("click", "#add-movie", function () {
     event.preventDefault();
-    var usrmovie = $("#movie-input").val().trim();
-    console.log(usrmovie);
-    movie_list.push(usrmovie);
-    $("#movie-input").val("");
-    add_buttons();
+
+    if ($("#movie-input").val().trim() != "" && movie_list.indexOf($("#movie-input").val().trim()) === -1) {
+        var usrmovie = $("#movie-input").val().trim();
+        console.log(usrmovie);
+        movie_list.push(usrmovie);
+        $("#movie-input").val("");
+        add_buttons();
+    };
 });
 
 
