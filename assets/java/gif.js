@@ -10,7 +10,7 @@ function add_buttons() {
 
 function get_gifs(movie) {
     console.log(movie);
-    var queryURL = "http://api.giphy.com//v1/gifs/search?q=" + movie + "&api_key=4604176cdfcd4cee9af08803ffeedf63&limit=12";
+    var queryURL = "https://api.giphy.com//v1/gifs/search?q=" + movie + "&api_key=4604176cdfcd4cee9af08803ffeedf63&limit=12";
     console.log(queryURL);
     $.ajax({
         url: queryURL,
