@@ -42,7 +42,7 @@ function get_gifs(movie) {
 };
 
 
-$(document).ready(add_buttons());
+add_buttons();
 
 
 $(document).on("click", "#add-movie", function () {
